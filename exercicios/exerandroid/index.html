@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio android</title>
+    <style>
+        @font-face {
+            font-family:idroid;
+            src: url('fontes/idroid.otf') format(opentype);
+            font-weight:normal;
+            font-style:normal;
+        }
+        body {
+            background-color: #84e1ad;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        
+        }
+        
+        header {
+            height: 125px;
+        
+            background-image: linear-gradient(to bottom, #1a8344, #147240, #12492b);
+            padding: 5px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header > h1 {
+            text-align: center;
+            margin: 20px;
+        
+        }
+        header > p {
+            text-align: center;
+            margin: 15px;
+            
+        }
+
+        nav {
+            margin: 5px;
+        }
+
+        nav > a {
+             color: white;
+             font-weight: bold;
+             text-align: left;
+             margin-right: 10px;
+             text-decoration: none;
+             padding: 5px;
+        }
+        
+        main {
+
+            background-color: white;
+            padding: 5px;
+            text-align: justify;
+            margin-top: 0px;
+            margin-right: 100px;
+            margin-bottom: 0px;
+            margin-left: 100px;
+            
+            
+        }
+        main > h1 {
+            margin: 0px;
+        }
+        main > p {
+            margin: 0px;
+        }
+        .cor {
+            color: rgb(38, 219, 38);
+        }
+
+        h2 {
+            background-color:rgb(223, 214, 214);
+            font-family: 'idroid', Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        p > a {
+            text-decoration: none;
+        }
+        
+        main > picture > img {
+            width: 100%;
+            display: block;
+            height: auto;
+            margin: 10px auto 10px auto;
+            padding: 5px;
+            overflow: hidden;
+        }   
+        
+        main > iframe {
+            width: 100%;
+            margin: auto;
+            padding: 0px;
+            
+        }
+        img {
+            display: block;
+            margin: auto;
+            padding:10px ;
+        }
+       .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+       }
+
+       ol {
+        padding: 0px;
+        margin: 0px;
+       }
+       .left-list {
+        text-align: left;
+       }
+       .right-list {
+        text-align: right;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+        <p>Tudo aquilo que voce sempre quis saber sobre o mundo tech, em um unico lugar</p>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">noticias</a>
+            <a href="#">Curiosidade</a>
+            <a href="#">fale conosco</a>
+            
+        </nav>
+    </header>
+    <main>
+        <h2 class="cor">Historia do Mascote do Android</h1>
+        <p>Provavelmente  voce ja sabe que o sistema operacional  <span class="cor">Android</span>, mantido pelo <span class="cor">Google</span> e um dos mais utilizado para dispositivos moveis em todo o mundo. Mas talvez voce nao saiba que o seu simpatico mascote tem um nome e uma historia muito curiosa? pois acompanha este artigo para aprender muita coisa sobre esse robozinho</p>
+
+        <h2 class="cor">a primeira versao</h2>
+        <p>A primeira tentativa de criar um mascote surgium em 2007 e veio de um desenvolvidor chamado <a href="https://en.wikipedia.org/wiki/Donald_Morrill">Dan Morril</a>. Ele conta que abriu um <a href="https://inkscape.org/">inkscape</a> (software livre para vetorizacao de imagem) e criou sua propria versao de robo. O objectivo era apenas personificar o sistema apenas para a sua equipe, nao existia nenhuma solicitacao da empresa para a criacao de um mascote</p>
+        <img src="imagens/dan-droids-pq.png" alt="imagem de mascote">
+
+        <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+
+        <h2 class="cor"> Surge o novo mascote</h2>
+        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+         <picture>
+                <source media="(min-width:750 )" srcset="imagens/irina-block-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="imagem grande">
+            </picture>
+         
+         <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
+
+         <img src="imagens/bugdroid.png" alt="bugdroid">
+
+         <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo..</p>
+
+         <iframe width="560" height="650" src="https://www.youtube.com/embed/5K4pEk19nhs?si=iIt0bVuUYt3eWu2x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3>Quer aprender mais?</h3>
+         <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+         
+         
+                <div class="container">
+                    <ul class="left-list">
+                        <li>1.5 - Cupcake</li>
+                        <li>1.6 - Donut</li>
+                        <li>3.0 - Eclair</li>
+                        <li>2.2 - Froyo</li>
+                        <li>2.3 - Gingerbread</li>
+                        <li>3.0 - Honeycomb</li>
+                        <li>4.0 - Ice Cream Sandwich</li>
+                    </ul>
+                </div>
+
+                <di>
+                    <ul class="right-list">
+                        <li>4.1 - Jelly Bean</li>
+                        <li>4.4 - KitKat</li>
+                        <li>5.0 - Lolipop</li>
+                        <li>6.0 - Marshmallow</li>
+                        <li>7.0 - Nougat</li>
+                        <li>8.0 - Oreo</li>
+                        <li>9.0 - Pie</li>
+                    </ul>
+                </di>
+         </ol>
+
+
+         
+
+
+    </main>
+</body>
+
+</html>

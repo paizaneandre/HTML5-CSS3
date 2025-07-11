@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando imagens dinamicas</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>o objectivo do tema e de providenciar ao utilizador seja de celular, pc e tv uma imagem que enquadra-se neste dispositivos</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/foto.png" alt="foto flexivel">
+    </picture>
+<h1> Reproduzindo audio</h1>
+<p>vamos colocar audio no nosso site</p>
+<audio controls autoplay>
+    <source src="midias/jasonderulo.mp3" type="audio/mpeg">
+    <source src="midias/jasonderulo.ogg" type="audio/ogg">
+    <source src="midias/jasonderulo.wav" type="audio/wav">
+</audio>
+</body>
+</html>

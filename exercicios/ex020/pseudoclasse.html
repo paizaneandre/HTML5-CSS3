@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    a {
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+    .especial {
+        font-style: italic;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+    a:active {
+        color: yellow;
+    }
+    a::before {
+        content: '✠';
+        color: rgb(12, 216, 12);
+    }
+    a::after {
+        content: '✠';
+        text-decoration: none;
+        color:rgb(12, 228, 12);
+        font-weight: normal;
+    }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/paizan.andre?mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="external">pagina do facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/paizane-andr%C3%A9-064290204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="external" class="especial">pagina do linkedin</a></li>
+    </ul>
+</body>
+</html>
