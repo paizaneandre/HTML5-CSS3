@@ -73,7 +73,7 @@ section > p {
 .imagem {
     background-color: rgba(0, 0, 0, 0.709);
     color: white;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 6px 1px 4px rgba(0, 0, 0, 0.445);
 }
 
 .imagem > p {
