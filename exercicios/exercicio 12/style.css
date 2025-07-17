@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+:root {
+--fonte1: 'passion One', sans-serif;
+--fonte0:  "Great Vibes", cursive;
+--fonte3: Verdana, Geneva, Tahoma, sans-serif;
+--fonte4: "Allura", cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte3);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte1);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+section {
+padding-top: 10vh;
+padding-bottom: 10vh;
+line-height: 1.5em;
+padding-left: 30px;
+font-family:var(--fonte4);
+font-size: 2em;
+font-weight: bold;
+
+}
+
+section > p {
+    padding-bottom: 50px;
+}
+ 
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgba(0, 0, 0, 0.709);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.461);
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+#q1 {
+    background-size: cover;
+    background-image: url('imagens/background001.jpg');
+    background-position:right center 
+}
+     
+
+#q2{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+
+
+footer {
+padding: 15px;
+color: white;
+background-color: black;
+text-align: center;
+}
