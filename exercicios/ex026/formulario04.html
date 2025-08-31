@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario04</title>
+</head>
+<body>
+<form action="cadastro.php" method="post">
+    <fieldset>
+        <legend>dados do genero</legend>
+        <label for="isexm">Masculino: </label>
+        <input type="radio" name="sexo" id="isexm" value="M"> <br>
+        <label for="isexf"> Feminino: </label>
+        <input type="radio" name="sexo" id="isexf" value="F" checked>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>esporte favorito</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">futebol</label> <br>
+        <input type="checkbox" name="esnat" id="iesnast"> <label for="iesnast">natacao</label> <br>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">basquet </label><br>
+        <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">voleibol</label>
+    </fieldset>
+    <fieldset>
+        <p>
+            <label for="icor">cor</label>
+            <input type="color" name="verde" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Grau de satisfacao</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="5"> 
+        </p>
+        <p>
+             <label for="ifoto">Foto de perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>    
+</body>
+</html>
