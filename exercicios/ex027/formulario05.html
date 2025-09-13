@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario05</title>
+</head>
+<body>
+    <h1>continuacao de exemplo de formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            
+            <label for="iest">Provincia</label>
+            <select name="estado" id="iest">
+            <option value=""selected>Selecionar Provincia</option>
+            <option value="GZ">Gaza</option>
+            <option value="NPL">Nampula</option>
+            <option value="BR">Sofala</option>
+            <option value="NS">Niassa</option>
+            </select>
+        </p>
+        <label for="iprof">Profissao</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option >Agronomo</option>
+            <option >Economista</option>
+            <option >Desenvolvidor</option>
+            <option >Analista de Dados</option>
+        </datalist>
+        <p>
+            <label for="imsg">Mensagem (maximo 3000 caracteres)</label> <br>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
