@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* versao para todas medias */
+/* typical device breakpoint:
+pequenas telas: ate 600px
+celular: 600px ate 768px
+tablet: 768px ate 992px
+Desktop (pc): 992px ate 1200px
+TV (grandes telas): acima de 1200px  
+*/
+/* como ja fizemos o site mobile first nao precisa ter media queria para pequenas telas ou celular*/
+
+@media print {
+* { font-family: 'Courier New', Courier, monospace;}
+body {
+    background-image: url(../imagens/back-print.jpg);
+}
+main {
+    border: 2px solid black;
+}
+main h1 {
+    text-shadow: none;
+    color: black;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+#phone { display: none;}
+#tablet { display: block;}
+#print {display: none;}
+#pc {display: none;}
+#tv { display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+#phone { display: none;}
+#tablet { display: none;}
+#print {display: none;}
+#pc {display: block;}
+#tv { display: none;}
+}
+
+@media screen and (min-width:1200px) {
+    body { 
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone { display: none;}
+#tablet { display: none;}
+#print {display: none;}
+#pc {display: none;}
+#tv { display: block;}
+ main {
+    width: 700px;
+ }
+
+}
