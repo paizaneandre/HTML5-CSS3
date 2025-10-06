@@ -13,14 +13,18 @@ body, html {
 
 header {
     background-color: blanchedalmond;
-    padding: 10px;
+    max-width: 100%;
     
 }
 
 header > h1 {
     text-align: center;  
 }
-
+menu {
+    display: block;
+   
+    
+}
 menu > ul {
     list-style-type: none;
 }
@@ -28,14 +32,19 @@ menu > ul {
 menu > ul > li > a {
     text-decoration: none;
     color: white;
-    padding-bottom: 10px;
+    padding: 5px;
     display: block;
-    background-color: darkgray;
+     background-color: darkgray; 
+    text-align: center;
+    border-top: 2px solid rgb(239, 233, 233);
+    
+
 }
 
 menu a:hover {
     text-decoration: underline;
     color: blue;
+    background-color: rgba(166, 160, 160, 0.635);
     
 }
 
@@ -45,6 +54,7 @@ main {
     margin: auto;
     padding: 20px;
     text-align: justify;
+    border-radius: 10px;
     
 }
 
