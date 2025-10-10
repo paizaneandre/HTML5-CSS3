@@ -10,4 +10,44 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    background-color: #832c79;
+}
+
+main {
+    position: relative;
+    width: 100vw;    
+    height: 100vh;
+    border-radius: 10px;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height:500px;
+    border-radius:5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.353);
+}
+
+#imagem {
+    display: block;
+    background-image: url(../imagem/pexels-photo.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center right;
+   
+}
+
+#formulario {
+    padding: 10px;
+    display: block;
+}
+#formulario p {
+    padding-top: 10px;
+
 }

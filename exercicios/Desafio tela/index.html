@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio tela</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-queries.css">
 </head>
 <body>
     <main>
@@ -18,9 +19,22 @@
                 <p>este site foi desenvolvido no sentido de ajudar as pessoas a fazer as reservas de casas assim como alugar, abaixo insira a sua conta e o password:</p>
                 
                 <form action="login.php" method="post">
+                    <p>
+                        <label for="inome">Nome</label>
+                        <input type="text" nome="name" id="inome" required>
+                    </p> 
+
+                    <p>
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" required>
+                    </p>
+                    <p>
+                       <input type="submit" value="Enviar">
+                       <input type="reset" value="Limpar">
+                    </p>
 
                 </form>
-
+                
             </div>
         </section>
     </main>
