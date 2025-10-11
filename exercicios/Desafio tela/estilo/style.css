@@ -55,11 +55,21 @@ main {
 
 }
 
+form .campo {
+    background-color: black;
+    border-radius: 5px;
+    margin: 5px 0px;
+    display: block;
+        
+}
+
+
 form #person {
     background-color: black;
     color: white;
     font-size: 1em;
     padding: 5px ;
+    
    
 }
 
@@ -68,7 +78,20 @@ form #chave {
     color: white;
     font-size: 1em;
     padding: 5px;
+    
+    
+
 }
+
+form > div.campo > p > input {
+   height: 100%;
+    padding: 5px;
+    
+    
+
+}
+
+
 
 form input[type= text] {
     

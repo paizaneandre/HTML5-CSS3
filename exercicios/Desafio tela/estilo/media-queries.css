@@ -15,6 +15,13 @@
         height: 100%;
         margin-right:10px;
    }
+form .campo {
+    background-color: black;
+    width: 40%;
+    display:inline-block; /*nao satisfeito por mexer*/
+    
+        
+}
 
    form input[type= submit] {
     width:60%;
@@ -44,6 +51,9 @@ form input[type=reset] {
         width: 40%;
         height:100%;
     }
+
+   
+
 
     form input[type= submit] {
     width:40%;
