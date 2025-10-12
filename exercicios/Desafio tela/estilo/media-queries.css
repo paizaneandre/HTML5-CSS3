@@ -18,14 +18,14 @@
        
    }  
     section#login form input[type= submit] {
-    width: 60%;
-    display: block;
+    width: 20%;
+    display: inline-block;
     height: 25px;
 }
 
 section#login form input[type=reset] {
-    width: 60%;
-    display: block;
+    width: 20%;
+    display: inline-block;
     height: 25px;
 }
             
@@ -51,14 +51,14 @@ section#login form input[type=reset] {
 
 
     section#login form input[type= submit] {
-    width:40%;
-    display: block;
+    width:20%;
+    display: inline-block;
     height: 25px;
 }
 
 section#login form input[type=reset] {
-    width: 40%;
-    display: block;
+    width: 20%;
+    display:inline-block;
     height: 25px;
 }
 

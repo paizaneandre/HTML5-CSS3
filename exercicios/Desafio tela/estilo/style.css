@@ -79,6 +79,7 @@ section#login form input[type=submit] {
     background-color: rgba(0, 0, 0, 0.929);
     color: white;
     font-size: 1em;
+    margin-bottom: 5px;
     
 }
 
