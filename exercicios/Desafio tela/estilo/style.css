@@ -55,6 +55,21 @@ main {
 
 }
 
+form div.campo span {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    transform: translateY(3px);
+}
+form div.campo input {
+    display: inline-block;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.517);
+    border-radius: 5px;
+}
 
 
 section#login form input[type=submit] {
