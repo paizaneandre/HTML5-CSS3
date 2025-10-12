@@ -7,61 +7,55 @@
     }
     section#login {
         width: 80vw;
+        display: block;
     }
 
    section#login > div#imagem {
-        float: left;
-        width: 30%; 
+        float: left; 
+        width: 30%;
         height: 100%;
-        margin-right:10px;
-   }
-form .campo {
-    background-color: black;
+       
+   }  
+    section#login form input[type= submit] {
     width: 60%;
-    display:inline-block; /*nao satisfeito por mexer*/
+    display: block;
+    height: 25px;
+}
+
+section#login form input[type=reset] {
+    width: 60%;
+    display: block;
+    height: 25px;
+}
+            
+}  
     
-        
-}
 
-   form input[type= submit] {
-    width:60%;
-    display: block;
-    height: 25px;
-}
-
-form input[type=reset] {
-    width: 60%;
-    display: block;
-    height: 25px;
-}
-   
-   
-}
+  
 
 @media screen and (min-width:992px) and (max-width:1200px) {
     body {
         background-image: linear-gradient( to top,#49a09d, #832c79 );
     }
     section#login {
-        width: 95vw;
+        width: 95vw;     
     }
 
     section#login > div#imagem {
         float: right;
-        width: 40%;
+        width: 30%;
         height:100%;
+      
     }
 
-   
 
-
-    form input[type= submit] {
+    section#login form input[type= submit] {
     width:40%;
     display: block;
     height: 25px;
 }
 
-form input[type=reset] {
+section#login form input[type=reset] {
     width: 40%;
     display: block;
     height: 25px;
