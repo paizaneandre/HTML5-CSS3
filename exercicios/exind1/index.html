@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicando flexbox</title>
+    <style>
+        div.conteiner-coluna {
+            display: flex;
+            flex-flow: column nowrap;
+            background-color: rgb(248, 244, 244);
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        div.conteiner-linha {
+            background-color: black;
+            display: flex;
+            flex-direction: row nowrap;
+            width: 100%;
+            height: 30px;
+            
+        }
+
+
+        div.itens#caixa {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            background-color: blue;
+            flex-basis: 100px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        div.itens#menu {
+            background-color: black;
+            display: flex;
+            color: white; 
+            flex: 1;
+            justify-content: space-around;
+            align-items: center;
+         
+        }
+        
+       
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner-coluna"> 
+        <div class="itens" id="caixa">Caixa fixa</div> 
+        
+        <div class="conteiner-linha">
+            <div class="itens" id="menu">home</div>
+        <div class="itens" id="menu">Sobre</div>
+        <div class="itens" id="menu">servicos</div>
+        <div class="itens" id="menu">contacto</div>
+        </div>
+    </div>
+
+    
+
+    
+</body>
+</html>
