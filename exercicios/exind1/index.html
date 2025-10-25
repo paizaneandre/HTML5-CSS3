@@ -5,27 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practicando flexbox</title>
     <style>
-        div.conteiner-coluna {
+        div.conteiner-principal {
             display: flex;
             flex-flow: column nowrap;
             background-color: rgb(248, 244, 244);
             justify-content: center;
             height: 100vh;
             align-items: center;
-            gap: 5rem;
-        }
-
-        div.conteiner-linha {
-            background-color: black;
-            display: flex;
-            flex-direction: row nowrap;
-            width: 100%;
-            height: 30px;
-            
+            gap: 30px;
         }
 
 
-        div.itens#caixa {
+        div#caixa {
             border: 1px solid black;
             margin: 5px;
             padding: 5px;
@@ -37,14 +28,48 @@
             align-items: center;
             
         }
-        div.itens#menu {
+        div#menu {
             background-color: black;
             display: flex;
             color: white; 
-            flex: 1;
+            flex-direction: row;
+            height: 30px;
+            width: 100%;
             justify-content: space-around;
             align-items: center;
-         
+            flex: 0 1 auto;
+            
+        }
+
+        div#card {
+            display: flex;
+            flex-direction: row wrap;
+            gap: 2rem ;
+        }
+
+        .cartao {
+            height:120px;
+            background-color:white;
+            width: 200px;
+            border: 1px solid rgba(103, 98, 98, 0.436);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            
+        }
+
+        .cartao h1 {
+            font-size: 20px;
+        }
+        .cartao p {
+            font-size: 14px;
+            margin: 0px;
+            padding: 0px;
+            word-wrap: break-word;
+            text-align: justify;
+            padding: 10px;
+            
         }
         
        
@@ -52,14 +77,25 @@
 </head>
 <body>
     
-    <div class="conteiner-coluna"> 
-        <div class="itens" id="caixa">Caixa fixa</div> 
+    <div class="conteiner-principal"> 
+        <div id="caixa">
+            <div class="itens">Caixa fixa</div>
+            
+        </div>
         
-        <div class="conteiner-linha">
-            <div class="itens" id="menu">home</div>
-        <div class="itens" id="menu">Sobre</div>
-        <div class="itens" id="menu">servicos</div>
-        <div class="itens" id="menu">contacto</div>
+        <div id="menu">
+            <div class="itens">home</div>
+            <div class="itens">Sobre</div>
+            <div class="itens">servicos</div>
+            <div class="itens">contacto</div>
+        </div>
+        <div id="card">
+            <div class="cartao"> <h1>card1</h1><p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates, expedita fugiat molestiae, consequatur laudantium nulla d</p></div>
+            <div class="cartao">Card 2</div>
+            <div class="cartao">Card 3</div>
+        </div>
+
         </div>
     </div>
 
