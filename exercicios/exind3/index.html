@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando flexbox parte 2</title>
+    <style>
+        header {
+            background-color: darkmagenta;
+            display: block;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+        }
+        header h1 {
+            font-size: 2em;
+            color: white;
+        }
+
+        section {
+            zoom: 0.8;
+            display: flex;
+            
+        }
+
+        article {
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            
+        }
+        article:nth-of-type(3) {
+            display: flex;
+            flex: 3 100px;
+            
+        }
+    
+        article:nth-of-type(3) div:first-child {
+            display: flex;
+            flex: auto;
+            flex-flow: row wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        button {
+            flex: auto;
+            margin: 5px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Complex Flexbox example</h1>
+    </header>
+    <section>
+        <article>
+            <div>
+                
+                <h1>primeiro artigo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <h1>Segundo artigo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <button>Nome</button>
+                <button>senha</button>
+                <button>Endereco</button>
+                <button>Enviar</button>
+                <button>Limpar</button>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
