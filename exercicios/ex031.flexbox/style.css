@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: normal;
+    line-height: 1.5em;
+}
+header {
+    padding: 10px;
+
+}
+
+main, section.container-flex, section.normal {
+    padding:10px;
+}
+
+section.container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 1 500px;
+}
+p, h1, h2 {
+    text-align: justify;
+    padding: 10px;
+}
