@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid white;
+    padding: 8px;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:  1fr 4fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    column-gap: 4px;
+    row-gap: 10px;
+    min-height: 100vh;
+
+}
+
+header {
+    border: 2px solid lightgray;
+    background-color: blue;
+    grid-column-end: span 2;
+}
+aside {
+    border: 2px solid lightgray;
+    background-color: yellow;
+}
+
+main {
+    border: 2px solid lightgray;
+    background-color: red;
+}
+footer {
+    border: 2px solid lightgray;
+    background-color: green;
+    grid-area: 3/1/4/3;
+}
+
+ 
