@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid02</title>
+    <Style>
+
+        .body{
+            width: 1200px;
+        }
+        .conteiner {
+        
+            display: grid;
+            grid-template-columns: 200px minmax(200px, 1fr) 200px;
+            grid-template-rows: 50px minmax(200px, auto) 50px;
+            row-gap: 10px;
+            column-gap: 15px;
+            margin: auto;
+        }
+
+        .topo {
+            grid-area: 1/1/2/4;
+            background-color: blueviolet;
+        }
+
+        .primario {
+            grid-area: 2/1/3/2;
+            background-color: blue;
+        }
+
+        .principal {
+            grid-area: 2/2/3/3;
+            background-color: green;
+            padding: 20px;
+            text-align: justify;
+            border-radius: 8px;
+        }
+
+        .secundario {
+            grid-area: 2/3/3/4;
+            background-color: aqua;
+        }
+        .Rodape {
+            grid-area: 3/1/4/4;
+            background-color: red;
+        }
+    </Style>
+</head>
+<body>
+    <h1>aprendendo grid com a funcao minmax aplicada na coluna e linha</h1>
+
+<div class="conteiner">
+    <div class="topo">topo</div>
+    <div class="principal">principal <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptates amet officiis necessitatibus ullam maxime libero ea explicabo tempora hic perspiciatis fugit odio enim vitae natus quod perferendis, aspernatur dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione voluptas voluptatibus ut porro cum consectetur, distinctio obcaecati unde fugit aliquam itaque veniam quaerat eveniet minus, rem veritatis cumque deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil est nobis cumque suscipit impedit molestiae ipsam asperiores obcaecati? Quidem adipisci possimus explicabo voluptas error voluptatem modi minus totam in omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos maiores enim sint suscipit, porro deleniti amet vel itaque minus ratione! Ratione voluptatem fugit reiciendis, aperiam beatae iusto neque esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illo voluptatibus. Sed quod ratione id nam repellat reprehenderit odit ut illo, inventore aliquid esse, excepturi exercitationem facilis quo? Vero, sapiente! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio tempora aspernatur corporis blanditiis alias! Doloremque quo mollitia expedita dignissimos tempore voluptatem, magni necessitatibus at provident non, distinctio impedit! Omnis, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat reprehenderit eligendi, doloribus reiciendis consequatur ex. Corporis minus repellendus a. Dicta ducimus at nisi natus illo sequi explicabo dolorum error amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rem perspiciatis earum architecto modi adipisci excepturi exercitationem similique consequatur, eum quas mollitia. Non magni soluta ex aliquid fugit eveniet ipsam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sunt quo recusandae porro magnam laudantium illo ducimus? Nisi impedit ab, recusandae vel deserunt aspernatur soluta, accusantium eveniet perspiciatis laborum necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, atque, praesentium consequuntur qui explicabo maiores nam beatae id veritatis porro ipsum quibusdam! Minus non iste illo voluptatibus fuga! Consequatur, doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti tempore sed quod quibusdam odio culpa dicta necessitatibus harum consequuntur suscipit sunt pariatur ab, fuga ut, repellendus nulla eos et labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati maiores similique vero sunt tempora, eum mollitia odio aspernatur? Sunt repudiandae quaerat similique nostrum porro aperiam excepturi obcaecati modi, vero delectus!</p></div>
+    <div class="primario">primario</div>
+    <div class="secundario">secundario</div>
+    <div class="Rodape">Rodape</div>
+</div>
+    
+</body>
+</html>
