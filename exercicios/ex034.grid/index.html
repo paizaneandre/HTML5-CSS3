@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gri04</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 60px 60px;
+            gap: 10px;
+;
+        }
+
+        .item {
+             background-color: darkgray;
+             border: 2px solid black
+        }
+
+        #Box2 {
+            background-color: black;
+            color: white;
+            grid-column: auto/span 2;
+        }
+
+        #Box3 {
+            background-color: black;
+            color: white;
+            grid-area: auto/1/auto/3;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Aprendo a usar a palavra chave auto</h1>
+    <p>A funcao AUTO ela pode ser usada para tornar a coluna ou linha automatica no seguinte grid foi definido:
+        grid colum: auto/span 2 (ocupa duas colunas), na segunda box2 e na terceira box3 foi definido
+        grid-area: auto/1/auto/3 (as linhas sao automaticas e comeca na coluna 1 e termina na coluna 3).
+
+    </p>
+    <div class="container">
+        
+            <div class="item" id="Box1">Box1</div>
+            <div class="item" id="Box2">Box2</div>
+            <div class="item" id="Box3">Box3</div>
+            <div class="item" id="Box4">Box4</div>
+            <div class="item" id="Box5">Box5</div>
+        
+    </div>
+    
+</body>
+</html>
