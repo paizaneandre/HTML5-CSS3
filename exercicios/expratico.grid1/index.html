@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercicio pratico</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <style>
         *{
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .container {
             display: grid;
@@ -20,58 +24,111 @@
             
         }
        
-        .header {
+        header {
             display: flex;
-            flex-direction: row;
-            background-color:pink;
-            grid-area: 1/1/2/3; 
+            background-color:rgb(250, 2, 122);
+            grid-area: 1/1/2/3;
             justify-content: center; 
-            align-items: center; 
+            align-items: center;   
         }
 
-        .header > button  {
+        header > p {
+            display: flex;
+            height: 20px;
+            color: black;
+            padding: 5px;
+            margin: 0px 10px;
+            padding: 5px 0px;
+            font-weight: bold;
+        }
+        
+        header > p > span{
+            transform: translateY(-7px);
+            margin-right: 10px;
+        }
+
+        header > button  {
+            height: 20px;
             padding: 0px 10px;
             margin-left: auto;
             margin-right: 20px;
-            align-items: center;    
+          
         }
 
-        .header > button:hover {
+        header > button:hover {
             background-color: white;
             cursor: pointer;
         }
-        .menu {
-            background-color:red;
+        nav {
+            background-color:pink;
             grid-area: 2/1/3/2;
         }
-        .menu > ul {
+        nav > div> ul {
             list-style: none;
             margin: 10px;
+            
         }
-        .menu > ul > li {
+        nav > div > ul > li {
             line-height: 1.5em;
+            position: relative;
+            
         }
-        .main {
-            background-color: blue;
+        nav > div > ul > li > span {
+            display: inline-block;
+            transform: translateY(4px);
+            color: black;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        nav > div> ul > li span:nth-of-type(1) {
+            background-color: gray;
+            color: white;
+        }
+        nav > div > ul > li span:nth-of-type(2) {
+            position: absolute;
+            left: 90%;
+        }
+
+        
+        main {
+        
             grid-area: 2/2/3/3;
         }
-        .footer {
-            background-color: palevioletred;
+        footer {
+            display: grid;
+            background-color:rgb(250, 2, 122);
             grid-area: 3/1/4/3;
+            text-align: center;
+            place-items: center;
+        }
+
+        footer > p > span {
+            transform: translateY(6px);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header"><p>Confeitaria</p> <button>Login</button></div>
-        <div class="menu" ><ul>
-            <li>Home</li>
-            <li>Produtos</li>
-            <li>Carrinho</li>
-            <li>Perfil</li>
-        </ul></div>
-        <div class="main">main</div>
-        <div class="footer">footer</div>
+        <header>
+                <p><span class="material-icons">cake</span>Confeitaria</p> 
+                <button>Login</button>
+        </header>
+        <nav>
+            <div>
+                <ul>
+                <li> <span class="material-icons">home</span>Home<span class="material-icons">chevron_right</span></li>
+                <li> <span class="material-icons">motorcycle</span>Produtos <span class="material-icons">chevron_right</span></li>
+                <li> <span class="material-icons">shopping_cart</span>Carrinho <span class="material-icons">chevron_right</span></li>
+                <li> <span class="material-icons">person</span>Perfil <span class="material-icons">chevron_right</span></li>
+            </ul>
+        </div>
+        </nav>
+        <main>
+            <p>main principal</p>
+        </main>
+        <footer>
+            <p>Bolos deliciosos feito com muito carinho  <span class="material-icons">favorite</span></p>
+        </footer>
         
     </div>
 </body>
