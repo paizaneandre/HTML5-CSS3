@@ -91,9 +91,35 @@
 
         
         main {
-        
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             grid-area: 2/2/3/3;
+            gap: 5px;
+            margin: 0px 10px; 
+             
         }
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0px;
+            height: 250px;
+            box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.516);
+            justify-content: space-between;
+            text-align: center;
+            
+         
+        }
+
+        .card > h1 {
+            font-size: 1em;
+            
+        }
+        
+        .card > p {
+            font-size: 1em;
+        }
+
+        
         footer {
             display: grid;
             background-color:rgb(250, 2, 122);
@@ -124,7 +150,41 @@
         </div>
         </nav>
         <main>
-            <p>main principal</p>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
+            <div class="card">
+                <img src="imagem/bolo de chocolate.jpg" alt="bolo de chocolate">
+                <h1>Bolo de Chocolate</h1>
+                <p>Delicioso bolo de chocolate molhadinho, decorado com morango</p>
+            </div>
         </main>
         <footer>
             <p>Bolos deliciosos feito com muito carinho  <span class="material-icons">favorite</span></p>
